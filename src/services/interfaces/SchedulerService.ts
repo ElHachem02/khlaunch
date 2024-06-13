@@ -1,6 +1,6 @@
-import {Activity} from "../../domain/entities/Activity";
+import Activity from '../../domain/entities/Activity';
 
-export interface Scheduler {
+export interface SchedulerService {
   addActivity(activity: Activity): Promise<Activity | null>;
   getActivities(): Promise<Activity[]>;
   removeActivity(id: string): Promise<boolean>;
