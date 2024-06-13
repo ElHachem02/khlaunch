@@ -1,5 +1,5 @@
 import {Request, Response, NextFunction, Router as expressRouter} from 'express';
-import {Controller} from './controller';
+import {Controller} from './Controller';
 import {authenticateAdmin} from '../middleware/Auth';
 
 /**
